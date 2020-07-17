@@ -1,0 +1,24 @@
+<p>usuarios works!</p>
+
+<div style="text-align:center;">
+    <h1>Bienvenido {{tittle}}</h1>
+    <h1>Info Seed :{{datos['seed']}}</h1>
+    
+    <br>
+    <div *ngFor = 'let user of users'>
+        <br>
+        <img [src]='user.picture.thumbnail'>
+        <h1 style="font-size: 16px;">Genero :{{user.gender}}</h1>
+        <h1 style="font-size: 16px;">Title :{{user.name.title}}</h1>
+        <h1 style="font-size: 16px;">Primer Nombre :{{user.name.first}}</h1>
+        <h1 style="font-size: 16px;">Segundo Nombre :{{user.name.last}}</h1>
+        <h1 style="font-size: 16px;">Ciudad :{{user.location.city}}</h1>
+        <h1 style="font-size: 16px;">Numero de la calle :{{user.location.street.number}}</h1>
+        <h1 style="font-size: 16px;">Nombre de la calle :{{user.location.street.name}}</h1>
+        <h1 style="font-size: 16px;">Codigo postal :{{user.location.postcode}}</h1>
+        <h1 style="font-size: 16px;">Correo :{{user.email}}</h1>
+        <h1 style="font-size: 16px;">Numero telefonico :{{user.phone}}</h1>
+        <h1 style="font-size: 16px;">Fecha :{{user.registered.date}}</h1>
+        <h1 style="font-size: 16px;">Edad :{{user.registered.age}}</h1>
+    </div>
+</div>  
